@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOKA SOLUTIONS | Contact</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js" defer></script>
+
+    <!-- Leaflet CSS for interactive map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body style="background-color: #87CEFA;">
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <img src="Images/Cleaning_logo.jpg" alt="Mooka Solutions Logo" width="200">
+        </div>
+        <h1>MOOKA SOLUTIONS</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>You can find us on:</p>
+
+        <hr>
+
+        <h2 align="center">MOOKA SOLUTIONS (PTY) LTD</h2>
+
+        <!-- Interactive Map -->
+        <div id="map" 
+             style="width:100%; height:400px;"
+             data-lat="-26.25023" 
+             data-lng="27.96049" 
+             data-zoom="17" 
+             data-popup="MOOKA SOLUTIONS (PTY) LTD">
+        </div>
+
+        <h2>Find us on these social media platforms:</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/" >INSTAGRAM</a><br>
+            <a href="https://www.facebook.com/" >FACEBOOK</a><br>
+            <a href="https://web.whatsapp.com/">WHATSAPP: 070 404 5735</a><br>
+            <a href="mailto:ST10481457@rcconnect.edu.za">Email: ST10481457@rcconnect.edu.za</a>
+        </div>
+
+        <!-- OPERATING HOURS -->
+         <h1>Operating Hours</h1>
+        <table bgcolor="black" width="700">
+         <tr bgcolor="grey">
+            <th><b>SUNDAY</b></th>
+            <th><b>MONDAY</b></th>
+            <th><b>TUESDAY</b></th>
+            <th><b>WEDNESDAY</b></th>
+            <th><b>THURSDAY</b></th>
+            <th><b>FRIDAY</b></th>
+            <th><b>SATURDAY</b></th>        
+         </tr>
+         <tr bgcolor="lightgrey" align="center"> 
+            <td>CLosed</td>
+            <td>9am-5pm</td>
+            <td>9am-5pm</td>
+            <td>9am-5pm</td>
+            <td>9am-5pm</td>
+            <td>9am-5pm</td>
+            <td>9am-2pm</td>
+         </tr>
+    
+         </table>
+
+    </section>
+
+    <hr>
+    <footer>
+        <p>&copy; Copyright - MOOKA SOLUTIONS (PTY) LTD. All rights reserved.</p>
+    </footer>
+    <hr>
+
+    <!-- LEAFLET JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- CONTACT PAGE JS -->
+    <script>
+        // Initialize Leaflet Map
+        const mapEl = document.getElementById("map");
+        const lat = mapEl.dataset.lat;
+        const lng = mapEl.dataset.lng;
+        const zoom = mapEl.dataset.zoom;
+        const popupText = mapEl.dataset.popup;
+
+        const map = L.map('map').setView([lat, lng], zoom);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([lat, lng]).addTo(map)
+            .bindPopup(popupText)
+            .openPopup();
+    </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;   
+}
+body,h1, h2, p, ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        background: #f4f4f9;
+        color: #333;
+        blackground-color: rgb(73, 240, 7);
+    }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00fcef;
+    padding: 1rem 2rem 
+}
+
+nav .Logo{
+    color: #ff0000;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav .nav-links{
+    list-style-type: none;
+    display: flex;
+}
+
+nav .nav-links li{
+    margin-left: 22px;  
+}
+
+nav .nav-links a{
+    text-decoration: none;
+    color: #7900be;
+    font-weight: bold;
+}
+
+main div img {
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+main div img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004d99;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fade 0.8s forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOKA SOLUTIONS | Gallery</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="View examples of professional cleaning work completed by Mooka Solutions.">
+    <meta name="keywords" content="cleaning gallery, cleaning examples, Mooka Solutions work">
+    <meta name="author" content="Mooka Solutions">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Gallery Page CSS -->
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js" defer></script>
+</head>
+
+<body style="background-color: #87CEFA; font-family: 'Poppins', sans-serif;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/Cleaning_logo.jpg" 
+                 alt="Mooka Solutions Logo"
+                 width="130"
+                 loading="lazy"
+                 class="logo-img">
+        </div>
+
+        <h1 class="brand">MOOKA SOLUTIONS</h1>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <header class="page-title">
+        <h2>Evidence of Past Work</h2>
+        <p>Our professional cleaning services in action.</p>
+    </header>
+
+    <!-- GALLERY SECTION -->
+    <main>
+        <section class="gallery-section fade-in">
+            <div class="gallery-grid">
+                <img src="images/Evidence.webp" alt="Cleaning Evidence 1">
+                <img src="images/Evidence2.jpg" alt="Cleaning Evidence 2">
+                <img src="images/Evidence3.webp" alt="Cleaning Evidence 3">
+                <img src="images/Evidence4.webp" alt="Cleaning Evidence 4">
+                <img src="images/office cleaning.webp" alt="Office Cleaning Work">
+                <img src="images/Warehouse cleaning.jpg" alt="Warehouse Cleaning">
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Mooka Solutions. All Rights Reserved.</p>
+        <div class="social">
+            <a href="#" class="social-icon">🌐</a>
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📸</a>
+            <a href="#" class="social-icon">✉️</a>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
+

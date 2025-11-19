@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOOKA SOLUTIONS | Enquiry</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS File -->
+<link rel="stylesheet" href="css/enquiry.css">
+
+<!-- JavaScript File -->
+<script src="js/enquiry.js" defer></script>
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color:#87CEFA;">
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="Images/Cleaning_logo.jpg" alt="Mooka Solutions Logo" width="130" loading="lazy">
+    </div>
+    <h1 class="brand">MOOKA SOLUTIONS</h1>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="enquiry-intro">
+        <h2>We’d Love to Hear from You!</h2>
+        <p>Fill out the form below to enquire about our services, volunteer opportunities, or sponsorship possibilities.</p>
+    </section>
+
+    <section class="enquiry-form">
+        <form id="enquiryForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(+27) 11 985 0529" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Enquiry</legend>
+                <label for="serviceType">I am enquiring about:</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="residential">Residential Cleaning</option>
+                    <option value="commercial">Commercial Cleaning</option>
+                    <option value="specialized">Specialized Cleaning</option>
+                    <option value="volunteer">Volunteering</option>
+                    <option value="sponsor">Sponsorship</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    I agree to the <a href="#">Privacy Policy</a>
+                </label>
+
+                <label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Subscribe to our newsletter
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Enquiry</button>
+            <p id="formFeedback" style="margin-top: 1em;"></p>
+        </form>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Mooka Solutions. All Rights Reserved.</p>
+    <div class="social">
+        <a href="#" class="social-icon">🌐</a>
+        <a href="#" class="social-icon">📘</a>
+        <a href="#" class="social-icon">📸</a>
+        <a href="#" class="social-icon">✉️</a>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
+

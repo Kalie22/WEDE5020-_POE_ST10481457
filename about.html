@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOKA SOLUTIONS | About Us</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn more about Mooka Solutions — a trusted provider of professional cleaning services.">
+    <meta name="keywords" content="About Mooka Solutions, cleaning company, professional cleaners">
+    <meta name="author" content="Mooka Solutions">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- About Page CSS -->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- JS for interactions -->
+    <script src="js/about.js" defer></script>
+
+    <!-- Simple animation for fade-in -->
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .team-member {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body style="background-color: #87CEFA; font-family: 'Poppins', sans-serif;">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/Cleaning_logo.jpg" alt="Mooka Solutions Logo" width="130" class="logo-img" loading="lazy">
+        </div>
+
+        <h1 class="brand">MOOKA SOLUTIONS</h1>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO/BANNER SECTION -->
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <h2>About Mooka Solutions</h2>
+            <p>Providing professional cleaning services across residential, commercial, and industrial spaces with eco-friendly methods and fully trained staff.</p>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section fade-in">
+        <div class="about-container">
+            <h3>Who We Are</h3>
+            <p>Founded in 2020, MOOKA SOLUTIONS emerged to support safe, clean environments post-lockdown, providing PPE and cleaning services to hospitals, offices, and homes.</p>
+            <p>Our mission: Deliver exceptional cleaning services with attention to detail and sustainable approaches, transforming areas into hygienic, spotless environments that meet client expectations.</p>
+            <p>Our vision: Become the most reputable cleaning brand in Gauteng, renowned for environmentally conscious methods and dedication to healthier, cleaner communities.</p>
+        </div>
+    </section>
+
+    <!-- VALUES SECTION -->
+    <section class="values-section fade-in">
+        <div class="about-container">
+            <h3>Our Values</h3>
+            <ul>
+                <li>✔ Professionalism & Trust</li>
+                <li>✔ Quality Service Delivery</li>
+                <li>✔ Environmental Responsibility</li>
+                <li>✔ Customer-Centered Approach</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team-section fade-in">
+        <div class="about-container">
+            <h3>Meet Our Team</h3>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="images/ceo.jpg" alt="Team Leader John Doe">
+                    <h4>John Doe</h4>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/operations manaer.jpg" alt="Operations Manager John Smith">
+                    <h4>John Smith</h4>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in">
+        <p>© 2025 Mooka Solutions. All Rights Reserved.</p>
+        <div class="social">
+            <a href="#" class="social-icon">🌐</a>
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📸</a>
+            <a href="#" class="social-icon">✉️</a>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
